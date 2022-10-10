@@ -1,3 +1,4 @@
+#made by Femijkf and TheVideoDude
 import requests
 import time
 import spotipy
@@ -10,7 +11,8 @@ from pprint import pprint
 
 
 ACCESS_TOKEN  = util.prompt_for_user_token(
-        username= "tprngna3bfpx0zrpnnygkmxfo",
+        #find your Spotify username in account settings
+        username= "your_spotify_username",
         scope= "user-read-playback-state playlist-modify-public user-modify-playback-state",
         client_id=client_ID,
         client_secret=client_SECRET,
@@ -56,11 +58,11 @@ def get_current_track(access_token):
     return (uri, track_name)
 
 scope = 'playlist-modify-public'
-username = 'tprngna3bfpx0zrpnnygkmxfo'
+#find your Spotify username in account settings
+username = 'your_spotfiy_username'
 
 token = SpotifyOAuth(scope=scope, username=username, client_id=client_ID, client_secret=client_SECRET, redirect_uri=redirect_URI)
 spotifyObject = spotipy.Spotify(auth_manager=token)
-
 
 #create the playlist
 playlist_name = input("Name your Playlist: ")
