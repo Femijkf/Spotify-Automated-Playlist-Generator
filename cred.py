@@ -1,3 +1,6 @@
-client_ID='f56f38af706f4d7ba45a4162042181fa'
-client_SECRET='2dbf90dead354c7889850da634fb8fc9'
+#get your Client ID at 'https://developer.spotify.com/dashboard' by becoming a Spotify developer --> "create an app" --> access Spotify developer dashboard
+client_ID='client_id'
+#get your Client Secret at 'https://developer.spotify.com/dashboard' by becoming a Spotify developer --> "create an app" --> access Spotify developer dashboard
+client_SECRET='client_secret'
+#add 'http://localhost:9000' in the "edit settings" of the Spotify developer dashboard under "Redirect URIs"
 redirect_URI='http://localhost:9000'
